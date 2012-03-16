@@ -1,0 +1,17 @@
+sysgen_startup
+addpath('/usr/local/bin/mlib_devel_10_1/xps_library');
+addpath('/usr/local/bin/mlib_devel_10_1/casper_library');
+addpath('/usr/local/bin/mlib_devel_10_1/gavrt_library');
+addpath('/usr/local/bin/matlab_R2009a/toolbox/dspblks/dspblks');
+addpath('/usr/local/bin/matlab_R2009a/toolbox/dspblks/dspblks/private');
+addpath('/usr/local/bin/matlab_R2009a/toolbox/dspblks/dspdemos');
+addpath('/usr/local/bin/matlab_R2009a/toolbox/dspblks/dspdemos/demosearch');
+addpath('/usr/local/bin/matlab_R2009a/toolbox/dspblks/dspmasks');
+addpath('/usr/local/bin/matlab_R2009a/toolbox/dspblks/dspmex');
+addpath('/usr/local/bin/matlab_R2009a/toolbox/dspblks/include');
+addpath('/usr/local/bin/matlab_R2009a/toolbox/dspblks/lib');
+system_dependent('RemoteCWDPolicy','reload')
+system_dependent('RemotePathPolicy','reload')
+load_system('casper_library');
+clc;
+simulink;
